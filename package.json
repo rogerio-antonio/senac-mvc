@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.0.0",
+    "bootstrap": "^5.3.7",
+    "jquery": "^3.7.1",
+    "summernote": "^0.9.1",
+    "suneditor": "^2.47.6"
+  }
+}
