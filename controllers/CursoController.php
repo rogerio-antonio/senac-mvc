@@ -19,7 +19,16 @@ class CursoController extends Controller
     }
 
     public function index(){//Primeira Página (Listar todos)
+        $Curso = new Curso();//Chama o model
 
+        $this->data['professor'] = "Victor"; //Só um registro de exemplo
+        $this->data['cursos'] = $Curso->getAll(); //Pega todos os cursos do banco de dados e armazena na variável data em Curso.php'
+
+        echo "<pre>"; // Para ver o conteúdo da variável data (teste que deve ser removido depois) e colocado antes da view (loadView)
+        print_r($this->data);
+        exit;
+
+        $this->loadView("cursos/index", $this->data); //this-> envia para a view
     }
 
     public function create(){//Chama o formulário de Cadastro
